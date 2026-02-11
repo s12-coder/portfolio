@@ -1,12 +1,7 @@
 import { motion } from 'motion/react';
-import { Github, Linkedin, Mail, ArrowDown } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 export function Hero() {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gray-950">
       {/* Animated background elements */}
@@ -114,6 +109,7 @@ export function Hero() {
             >
               <Github className="w-6 h-6 text-white" />
             </motion.a>
+
             <motion.a
               href="https://www.linkedin.com/in/seif-sarieddine-3abb78370/"
               target="_blank"
@@ -124,6 +120,7 @@ export function Hero() {
             >
               <Linkedin className="w-6 h-6 text-white" />
             </motion.a>
+
             <motion.a
               href="mailto:seifsariedd@gmail.com"
               className="p-4 bg-white/5 backdrop-blur-sm rounded-full border border-white/10 hover:bg-white/10 hover:border-fuchsia-400/50 transition-all"
@@ -133,8 +130,6 @@ export function Hero() {
               <Mail className="w-6 h-6 text-white" />
             </motion.a>
           </motion.div>
-
-         
         </div>
       </div>
     </section>
