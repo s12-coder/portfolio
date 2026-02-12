@@ -86,7 +86,7 @@ export function About() {
             <div>
               <p className="text-lg mb-4 font-semibold text-cyan-400">Frontend</p>
               <div className="flex flex-wrap gap-3">
-                {['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Motion'].map((tech) => (
+                {['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Motion','Rest APIs','Vite', 'Promises / Fetch / Axios','Error Handling',''].map((tech) => (
                   <motion.span
                     key={tech}
                     whileHover={{ scale: 1.1, y: -2 }}
@@ -100,7 +100,8 @@ export function About() {
             <div>
               <p className="text-lg mb-4 font-semibold text-violet-400">Backend</p>
               <div className="flex flex-wrap gap-3">
-                {['Node.js', 'Express', 'MongoDB', 'PostgreSQL', 'REST APIs'].map((tech) => (
+                {['Node.js', 'Express', 'MongoDB', 'PostgreSQL', 'REST APIs', 'Express.js', 'GraphQL', 'CRUD Operations', 'JWT Authentication',
+                  'Password Hashing', 'Modular Architecture'].map((tech) => (
                   <motion.span
                     key={tech}
                     whileHover={{ scale: 1.1, y: -2 }}
@@ -114,7 +115,7 @@ export function About() {
             <div>
               <p className="text-lg mb-4 font-semibold text-fuchsia-400">Tools</p>
               <div className="flex flex-wrap gap-3">
-                {['Git', 'VSCode', 'Figma', 'Docker', 'AWS'].map((tech) => (
+                {['Git', 'VSCode', 'Figma', 'npm', 'Node', 'Postman', 'pgAdmin'].map((tech) => (
                   <motion.span
                     key={tech}
                     whileHover={{ scale: 1.1, y: -2 }}
